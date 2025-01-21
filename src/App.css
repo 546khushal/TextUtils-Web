@@ -1,0 +1,28 @@
+/* Custom Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animated.fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .animated.delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animated.delay-2s {
+    animation-delay: 2s;
+  }
+  
+  .animated.delay-3s {
+    animation-delay: 3s;
+  }
+  
+  /* Hover effect for team member cards */
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

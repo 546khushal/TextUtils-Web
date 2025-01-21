@@ -1,16 +1,16 @@
 import React from 'react';
 
 function Alert(props) {
-    const caplitalize =(word)=>{                      //word first char capital
+    const capitalize = (word) => { // Capitalize the first letter of the word
         const lower = word.toLowerCase();
-        return lower.charAt(0).toUpperCase()+lower.slice(1);
+        return lower.charAt(0).toUpperCase() + lower.slice(1);
     }
+
     return (
-        <div>
+        <div style={{ minHeight: '50px' }}>
             {props.alert && (  // Ensure the alert object exists before rendering
                 <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
-                    <strong>{caplitalize(props.alert.type)}</strong>: {props.alert.msg}
-                    
+                    <strong>{capitalize(props.alert.type)}</strong>: {props.alert.msg}
                 </div>
             )}
         </div>
